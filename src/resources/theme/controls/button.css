@@ -1,0 +1,65 @@
+.button
+{
+    -fx-border-color: transparent;
+    -fx-border-width: 0px;
+    -fx-background-color: derive(-secondary-bg, -20%);
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+    -fx-text-fill: -secondary-text;
+    -jfx-rippler-fill: derive(-secondary-bg, -10%);
+    -jfx-button-type: RAISED;
+}
+
+.button:selected {
+    -fx-background-color: derive(-secondary-bg, -100%);
+}
+
+.flat-button
+{
+    -jfx-button-type: FLAT;
+}
+
+.button > .glyph-icon
+{
+    -fx-fill: -secondary-text;
+}
+
+.button:selected
+{
+    -fx-background-color: derive(-secondary-bg, -50%);
+}
+
+.button:selected:hover
+{
+    -fx-background-color: derive(-secondary-bg, -50%);
+}
+
+.button:selected:hover:pressed
+{
+    -fx-background-color: derive(-secondary-bg, -50%);
+}
+
+.button:hover
+{
+    -fx-background-color: derive(-secondary-bg, -30%);
+    -fx-text-fill: -secondary-text;
+    -fx-border-width: 0px;
+}
+
+.button:hover > .glyph-icon
+{
+    -fx-fill: -secondary-text;
+}
+
+.button:focused {
+}
+
+.set-photo:hover {
+    -fx-background-color: black;
+    -fx-opacity: 0.8;
+}
+
+.set-photo {
+    -fx-background-color: black;
+    -fx-opacity: 0.0;
+}

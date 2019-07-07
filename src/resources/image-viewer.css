@@ -1,0 +1,53 @@
+.image-viewer-button .glyph-icon {
+    -fx-text-fill: white;
+}
+
+.ivb-glyph-icon {
+    -fx-text-fill: white;
+}
+
+.image-viewer-button
+{
+    -fx-border-color: transparent;
+    -fx-border-width: 0px;
+    -fx-background-color: #00000064;
+    -fx-text-fill: white;
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+}
+
+.image-viewer-button:selected
+{
+    -fx-border-color: transparent;
+    -fx-border-width: 0px;
+    -fx-text-fill: white;
+    -fx-background-color: #00000075;
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+}
+.image-viewer-button:selected:hover
+{
+    -fx-border-color: transparent;
+    -fx-border-width: 0px;
+    -fx-text-fill: -fx-primary;
+    -fx-background-color: #00000064;
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+}
+
+.image-viewer-button:hover
+{
+    -fx-background-color: #00000064;
+    -fx-text-fill: -fx-secondary;
+    -fx-border-width: 0px;
+}
+
+.image-viewer-button:hover .glyph-icon, .image-viewer-button:hover .glyph-icon
+{
+    -fx-text-fill: white;
+}
+
+.image-viewer-button:focused {
+    -fx-background-color: derive(#b5b1b1, 70%);
+    -fx-text-fill: -fx-secondary;
+}

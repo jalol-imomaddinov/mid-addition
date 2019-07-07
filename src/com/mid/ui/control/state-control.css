@@ -1,0 +1,45 @@
+.progress-state {
+    -fx-background-color: #1976D2;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0; 
+    -fx-opacity: 0.3;
+}
+
+.progress-state > .glyph-icon {
+    -fx-fill: white;
+}
+
+.progress-state:hover {
+    -fx-background-insets: 0; 
+}
+
+.progress-state:selected {
+    -fx-background-color: #0f9d58;
+    -fx-background-insets: 0; 
+    -fx-opacity: 1;
+}
+
+.progress-state:disabled {
+    -fx-opacity: 0.3;
+}
+
+.discart-progress-state {
+    -fx-opacity: 1;
+}
+
+.discart-progress-state:selected {
+    -fx-background-color:#ff6666;
+    -fx-background-insets: 0; 
+}
+
+.discart-progress-state > .glyph-icon {
+    -fx-fill: white;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: transparent;
+}

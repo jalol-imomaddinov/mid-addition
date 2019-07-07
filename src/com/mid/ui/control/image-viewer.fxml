@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+
+<StackPane style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mid.ui.control.ImageViewerController">
+    <children>
+        <AnchorPane opacity="0.4" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" />
+        <AnchorPane id="AnchorPane" fx:id="blurBox" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: transparent;">
+            <children>
+                <ScrollPane fx:id="container" fitToHeight="true" fitToWidth="true" layoutX="119.0" layoutY="106.0" prefHeight="400.0" prefWidth="600.0" styleClass="image-scroll-pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <content>
+                        <StackPane onScroll="#onScroll" onScrollFinished="#onScrollFinished" onScrollStarted="#onScrollStarted" style="-fx-background-color: transparent;">
+                            <children>
+                                <ImageView fx:id="imageView" fitHeight="1200.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true" />
+                            </children>
+                        </StackPane>
+                    </content>
+                </ScrollPane>
+                <StackPane opacity="0.39" prefHeight="30.0" prefWidth="50.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                <StackPane layoutX="20.0" layoutY="20.0" prefHeight="30.0" prefWidth="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                    <children>
+                        <Label fx:id="zoomLabel" style="-fx-text-fill: white;" text="100%" />
+                    </children>
+                </StackPane>
+                <JFXButton contentDisplay="GRAPHIC_ONLY" minHeight="40.0" minWidth="40.0" onAction="#onClose" style="-fx-background-radius: 0 0 0 20;" styleClass="toolbar-button" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="CLOSE" size="20" />
+                    </graphic>
+                </JFXButton>
+                <StackPane opacity="0.39" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="15.0" />
+                <AnchorPane prefHeight="50.0" prefWidth="200.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="15.0">
+                    <children>
+                        <HBox layoutX="21.0" layoutY="12.0" spacing="10.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="10.0">
+                            <children>
+                                <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#zoomPlusAction" styleClass="toolbar-button">
+                                    <graphic>
+                                        <FontAwesomeIconView glyphName="PLUS" size="18" />
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#zoomMinusAction" styleClass="toolbar-button">
+                                    <graphic>
+                                        <FontAwesomeIconView glyphName="MINUS" size="18" />
+                                    </graphic>
+                                </JFXButton>
+                            </children>
+                        </HBox>
+                        <HBox layoutX="368.0" layoutY="10.0" spacing="20.0" AnchorPane.bottomAnchor="9.0" AnchorPane.rightAnchor="7.0">
+                            <children>
+                                <JFXComboBox fx:id="printer" maxHeight="1.7976931348623157E308" maxWidth="150.0" minWidth="150.0" />
+                                <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#printAction" styleClass="toolbar-button">
+                                    <graphic>
+                                        <FontAwesomeIconView glyphName="PRINT" size="25" />
+                                    </graphic>
+                                </JFXButton>
+                            </children>
+                        </HBox>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+        <ProgressIndicator fx:id="waitBar" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" />
+    </children>
+</StackPane>

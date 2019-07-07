@@ -1,0 +1,15 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13.09.2018, 7:17:50
+    Author     : user
+*/
+
+
+.jfx-check-box {
+    -jfx-unchecked-color: derive(-primary-text, 20%);
+    -jfx-checked-color: -secondary-bg;
+}

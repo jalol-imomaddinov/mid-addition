@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mid.ui.catalog.CatalogOverview">
+        <children>
+            <HBox spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+                <children>
+                    <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="63.0" layoutY="10.0" onAction="#productPrevPageAction" styleClass="toolbar-button">
+                        <graphic>
+                            <FontAwesomeIconView glyphName="CARET_LEFT" size="25" />
+                        </graphic>
+                    </JFXButton>
+                    <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" onAction="#productNextPageAction" styleClass="toolbar-button">
+                        <graphic>
+                            <FontAwesomeIconView glyphName="CARET_RIGHT" size="25" />
+                        </graphic>
+                    </JFXButton>
+                </children>
+            </HBox>
+            <TableView fx:id="catalogTable" prefHeight="407.0" prefWidth="580.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+                <columns>
+                    <TableColumn fx:id="catalogCol" prefWidth="75.0" text="Каталог" />
+                    <TableColumn fx:id="typeCol" prefWidth="75.0" text="Тури" />
+                    <TableColumn fx:id="priceCol" prefWidth="75.0" text="Бахоси" />
+            <TableColumn fx:id="painterPayCol" prefWidth="75.0" text="Краскачи хаки" />
+            <TableColumn fx:id="welderPayCol" prefWidth="75.0" text="Сварщик хаки" />
+                </columns>
+                <columnResizePolicy>
+                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                </columnResizePolicy>
+            </TableView>
+            <HBox nodeOrientation="RIGHT_TO_LEFT" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                <children>
+                    <JFXButton contentDisplay="GRAPHIC_ONLY" minHeight="35.0" minWidth="35.0" onAction="#productRemoveAction" styleClass="toolbar-button">
+                        <graphic>
+                            <FontAwesomeIconView glyphName="REMOVE" size="20" />
+                        </graphic>
+                    </JFXButton>
+                    <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="50.0" layoutY="10.0" minHeight="35.0" minWidth="35.0" onAction="#productEditAction" styleClass="toolbar-button">
+                        <graphic>
+                            <FontAwesomeIconView glyphName="EDIT" size="20" />
+                        </graphic>
+                    </JFXButton>
+                    <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" minHeight="35.0" minWidth="35.0" onAction="#productAddAction" styleClass="toolbar-button">
+                        <graphic>
+                            <FontAwesomeIconView glyphName="PLUS" size="20" />
+                        </graphic>
+                    </JFXButton>
+                </children>
+            </HBox>
+            <HBox spacing="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <children>
+                    <ToggleButton fx:id="railingToggle" minWidth="100.0" mnemonicParsing="false" selected="true" styleClass="button" text="Перила" />
+                    <ToggleButton fx:id="benchToggle" layoutX="10.0" layoutY="10.0" minWidth="100.0" mnemonicParsing="false" styleClass="button" text="Скамейка" />
+                    <ToggleButton fx:id="swingToggle" layoutX="10.0" layoutY="10.0" minWidth="100.0" mnemonicParsing="false" styleClass="button" text="Качели" />
+                    <ToggleButton fx:id="capricornToggle" layoutX="99.0" layoutY="10.0" minWidth="100.0" mnemonicParsing="false" styleClass="button" text="Козерок" />
+                </children>
+            </HBox>
+        </children>
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+        </padding>
+    </AnchorPane>

@@ -1,0 +1,18 @@
+/*JFXDialog styling*/
+.jfx-layout-heading
+{
+    -fx-background-color: -fx-color-1;
+}
+.jfx-layout-heading .label
+{
+    -fx-text-fill: black;
+    -fx-font-size: 12px;
+}
+.jfx-layout-body, .jfx-layout-actions{
+    -fx-background-color: -fx-primary;   
+}
+.jfx-layout-body .label
+{
+    -fx-text-fill: black;
+    -fx-padding: 20px 0 0 0;
+}

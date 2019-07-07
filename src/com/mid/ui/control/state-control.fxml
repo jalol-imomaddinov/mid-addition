@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox fx:id="stateBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" spacing="5.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mid.ui.control.StateControl">
+    <children>
+        <HBox fx:id="subStateBox" spacing="1.0">
+            <children>
+                <ToggleButton fx:id="runToggle" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="PLAY" size="10" />
+                    </graphic>
+                    <styleClass>
+                        <String fx:value="progress-state" />
+                        <String fx:value="state-button" />
+                    </styleClass>
+                </ToggleButton>
+                <ToggleButton fx:id="paintToggle" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="PAINT_BRUSH" size="10" />
+                    </graphic>
+                    <styleClass>
+                        <String fx:value="progress-state" />
+                        <String fx:value="state-button" />
+                    </styleClass>
+                </ToggleButton>
+                <ToggleButton fx:id="setupToggle" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="GEARS" size="10" />
+                    </graphic>
+                    <styleClass>
+                        <String fx:value="progress-state" />
+                        <String fx:value="state-button" />
+                    </styleClass>
+                </ToggleButton>
+                <ToggleButton fx:id="completeToggle" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="CHECK" size="10" />
+                    </graphic>
+                    <styleClass>
+                        <String fx:value="progress-state" />
+                        <String fx:value="state-button" />
+                    </styleClass>
+                </ToggleButton>
+            </children>
+        </HBox>
+    </children>
+</HBox>

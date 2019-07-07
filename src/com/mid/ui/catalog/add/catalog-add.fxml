@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="625.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mid.ui.catalog.add.AddCatalogController">
+    <children>
+        <AnchorPane layoutX="14.0" layoutY="14.0" maxHeight="292.0" maxWidth="296.0" style="-fx-border-color: gray;" AnchorPane.bottomAnchor="94.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="315.0" AnchorPane.topAnchor="14.0">
+            <children>
+                <StackPane layoutX="4.0" layoutY="4.0" maxHeight="285.0" maxWidth="289.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="3.0">
+                    <children>
+                        <ImageView fx:id="imageView" fitHeight="284.0" fitWidth="289.0" pickOnBounds="true" preserveRatio="true" styleClass="custom-pane" />
+                    </children>
+                </StackPane>
+                <StackPane onMouseClicked="#setPhoto" opacity="0.7" prefHeight="75.0" prefWidth="200.0" styleClass="set-photo" AnchorPane.bottomAnchor="107.5" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="107.5">
+                    <children>
+                        <Label style="-fx-text-fill: white;" text="Танлаш" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </StackPane>
+            </children>
+        </AnchorPane>
+        <VBox layoutX="390.0" layoutY="14.0" prefHeight="275.0" prefWidth="275.0" spacing="45.0" AnchorPane.bottomAnchor="90.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="35.0">
+            <children>
+                <HBox spacing="10.0">
+                    <children>
+                        <JFXTextField fx:id="numberField" labelFloat="true" minWidth="100.0" prefHeight="37.0" promptText="Каталог" HBox.hgrow="ALWAYS" />
+                        <JFXComboBox fx:id="typeCombo" labelFloat="true" maxWidth="1.7976931348623157E308" minWidth="100.0" prefHeight="37.0" prefWidth="139.0" promptText="Тури" HBox.hgrow="ALWAYS" />
+                    </children>
+                </HBox>
+                <JFXTextField fx:id="amoundField" labelFloat="true" layoutX="10.0" layoutY="164.0" minHeight="37.0" promptText="Бахоси" />
+            <JFXTextField fx:id="welderPay" labelFloat="true" layoutX="10.0" layoutY="174.0" minHeight="37.0" promptText="Сварщик хаки" />
+            <JFXTextField fx:id="painterPay" labelFloat="true" layoutX="10.0" layoutY="248.0" minHeight="37.0" promptText="Краскачи хаки" />
+            </children>
+        </VBox>
+        <HBox layoutX="479.0" layoutY="347.0" spacing="10.0" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="20.0">
+            <children>
+                <JFXButton minWidth="100.0" onAction="#saveAction" text="Саклаш" />
+                <JFXButton layoutX="10.0" layoutY="10.0" minWidth="100.0" onAction="#cancelAction" text="Ортга" />
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

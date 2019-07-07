@@ -1,0 +1,50 @@
+.root {
+    -fx-background-color: -primary-bg;
+}
+
+.glyph-icon {
+    -fx-fill: derive(-secondary-bg, -20%);
+}
+
+.alt-glyph-icon {
+    -fx-fill: -secondary-text;
+}
+
+.jfx-hamburger-icon {
+    -fx-spacing: 7;
+}
+
+.jfx-hamburger-icon StackPane
+{
+    -fx-background-color: -secondary-text;
+    -fx-background-radius: 5px;
+}
+
+.toolbar {
+    -fx-background-color: derive(-secondary-bg, -20%);
+}
+
+.image-viewer-button {
+    -fx-background-color: #00000064;
+}
+
+.sidebar {
+    -fx-background-color: derive(-secondary-bg, 80%);
+}
+
+.image-scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.image-scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.filter-bg {
+    -fx-background-color: derive(-secondary-bg, 97%);
+    -fx-text-fill: -primary-text;
+}
+
+.white-glyph-icon {
+    -fx-fill: white;
+}

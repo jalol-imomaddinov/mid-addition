@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="482.0" prefWidth="421.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mid.ui.contract.find.ContractFindController">
+    <children>
+        <VBox layoutX="14.0" layoutY="14.0" prefHeight="387.0" prefWidth="326.0" spacing="20.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+            <children>
+                <JFXRadioButton fx:id="numberRadio" selected="true" text="Буюртма раками" textFill="#b2b2b2" />
+                <JFXTextField fx:id="numberField" />
+                <JFXRadioButton fx:id="datasRadio" layoutX="10.0" layoutY="10.0" text="Малумотлар" textFill="#b2b2b2" />
+                <VBox fx:id="datasVBox" disable="true" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                    <children>
+                        <JFXCheckBox fx:id="catalogCheck" text="Каталог" textFill="#b2b2b2" />
+                        <JFXTextField fx:id="catalogField" disable="true" labelFloat="true" />
+                        <JFXCheckBox fx:id="customerCheck" layoutX="10.0" layoutY="10.0" text="Буюртмачи" textFill="#b2b2b2" />
+                        <JFXTextField fx:id="customerField" disable="true" labelFloat="true" layoutX="10.0" layoutY="38.0" />
+                        <JFXCheckBox fx:id="dateCheck" layoutX="10.0" layoutY="95.0" text="Сана" textFill="#b2b2b2" />
+                        <HBox fx:id="dateHBox" alignment="CENTER" disable="true" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                            <children>
+                                <JFXDatePicker fx:id="startDate" editable="false" promptText="Бошлангич сана" />
+                                <JFXDatePicker fx:id="endDate" editable="false" layoutX="10.0" layoutY="10.0" promptText="Охир сана" />
+                            </children>
+                        </HBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets left="10.0" />
+                    </VBox.margin>
+                </VBox>
+            </children>
+        </VBox>
+        <HBox layoutX="275.0" layoutY="470.0" spacing="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+            <children>
+                <JFXButton onAction="#findAction" prefWidth="80.0" text="Топиш" />
+                <JFXButton onAction="#cancelAction" prefWidth="80.0" text="Ортга" />
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

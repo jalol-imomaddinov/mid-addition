@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mid.ui.serial.SerialController">
+    <children>
+        <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="380.0" prefWidth="336.0" spacing="40.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <children>
+                <HBox alignment="CENTER" prefHeight="99.0" prefWidth="336.0" spacing="20.0">
+                    <children>
+                        <FontAwesomeIconView glyphName="KEY" size="50" />
+                        <Label styleClass="large-common-label" text="Enter activation key code" textFill="#bfb900" />
+                    </children>
+                </HBox>
+                <JFXTextField fx:id="keyCodeField" alignment="CENTER" prefHeight="72.0" prefWidth="352.0">
+                    <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="-10.0" />
+                    </VBox.margin>
+                </JFXTextField>
+                <HBox alignment="BOTTOM_CENTER" prefHeight="76.0" prefWidth="355.0" spacing="25.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <Button fx:id="submitButton" disable="true" mnemonicParsing="false" onAction="#onSubmitAction" prefWidth="100.0" text="Submit" />
+                        <Button mnemonicParsing="false" onAction="#onCloseAction" prefWidth="100.0" text="Close" />
+                    </children>
+                    <padding>
+                        <Insets bottom="20.0" />
+                    </padding>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

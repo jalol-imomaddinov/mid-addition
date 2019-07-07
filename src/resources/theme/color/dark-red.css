@@ -1,0 +1,7 @@
+* {
+    -primary-bg: #2A2E37;
+    -secondary-bg: derive(red, 20%);
+    -primary-text: white;
+    -secondary-text: white;
+    -secondary-fill: derive(white, -20%);
+}

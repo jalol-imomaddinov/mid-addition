@@ -1,0 +1,32 @@
+
+.alt-text-field {
+    -fx-prompt-text-fill: derive(-secondary-bg, 25%);
+    -fx-font-size : 12px;
+    -fx-text-fill: derive(-primary-text, 20%);
+    -jfx-focus-color: white;
+    -jfx-unfocus-color: white;
+}
+
+.text-field {
+    -fx-prompt-text-fill: derive(-secondary-bg, 25%);
+    -fx-font-size : 12px;
+    -jfx-focus-color: -secondary-bg;
+    -jfx-unfocus-color: derive(-secondary-bg, -20%);
+    -fx-text-fill: derive(-primary-text, 20%);
+}
+
+.alt-text-field {
+    -fx-prompt-text-fill: derive(-secondary-bg, 25%);
+    -fx-font-size : 12px;
+    -fx-text-fill: derive(-primary-text, 20%);
+    -jfx-focus-color: white;
+    -jfx-unfocus-color: white;
+}
+
+.jfx-combo-box {
+    -fx-prompt-text-fill: derive(-secondary-bg, 25%);
+    -fx-font-size : 12px;
+    -jfx-focus-color: -secondary-bg;
+    -jfx-unfocus-color: derive(-secondary-bg, -20%);
+    -fx-text-fill: derive(-primary-text, 20%);
+}

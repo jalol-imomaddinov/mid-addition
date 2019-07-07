@@ -1,0 +1,55 @@
+.toolbar-button {
+    -fx-border-color: transparent;
+    -fx-border-width: 0px;
+    -fx-background-color: derive(-secondary-bg, -20%);
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+    -fx-text-fill: -secondary-text;
+    -jfx-rippler-fill: derive(-secondary-bg, -10%);
+}
+
+.toolbar-button {
+    -fx-border-color: transparent;
+    -fx-border-width: 0px;
+    -fx-background-color: derive(-secondary-bg, -20%);
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+    -fx-text-fill: -secondary-text;
+    -jfx-rippler-fill: derive(-secondary-bg, -10%);
+}
+
+.toolbar-button > .glyph-icon
+{
+    -fx-fill: -secondary-text;
+}
+
+.toolbar-button:selected
+{
+    -fx-border-color: transparent;
+    -fx-border-width: 0px;
+    -fx-text-fill: -secondary-text;
+    -fx-background-color: -secondary-bg;
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+}
+.toolbar-button:selected:hover
+{
+    -fx-border-color: transparent;
+    -fx-border-width: 0px;
+    -fx-text-fill: -secondary-text;
+    -fx-background-color: -secondary-bg;
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+}
+
+.toolbar-button:hover
+{
+    -fx-background-color: derive(-secondary-bg, -70%);
+    -fx-text-fill: -secondary-text;
+    -fx-border-width: 0px;
+}
+
+.toolbar-button:hover > .glyph-icon
+{
+    -fx-fill: -secondary-text;
+}

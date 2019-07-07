@@ -1,0 +1,36 @@
+
+.tab{
+    -fx-background-color: -secondary-bg;
+}
+
+.tab-header-background {
+    -fx-background-color: -secondary-bg;
+}
+
+.tab-label {
+    -fx-text-fill: -secondary-text;
+    -fx-font-size: 12px; 
+}
+
+
+.tab-main{
+    -fx-pref-height : 60;
+    -fx-max-height : 60;
+}
+
+.settings-tab{
+    -fx-background-color: derive(-secondary-bg, 10%);
+    -fx-padding: 5px 20px 5px 20px;
+}
+
+.settings-tab:selected{
+    -fx-background-color: -secondary-bg;
+}
+
+.settings-tab:selected .tab-label{
+    -fx-text-fill: -secondary-text;
+}
+
+.settings-tab .tab-header-background{
+    -fx-background-color: derive(-secondary-bg, -50%);
+} 

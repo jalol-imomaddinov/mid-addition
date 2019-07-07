@@ -1,0 +1,52 @@
+
+.row-state-complete {
+    -fx-fill: black;
+    -fx-background-color: #66e98f;
+    /*-fx-border-weight: 0 1 0 1 0;*/
+    /*-fx-border-color: black;*/
+}
+
+.row-state-complete:even {
+    -fx-fill: black;
+    -fx-background-color: #66e98f;
+}
+
+
+/****************************
+/*	REFUSE
+*****************************/
+
+.row-state-refused {
+    -fx-background-color: #b5b1b1;
+    -fx-text-fill: white;
+}
+
+.row-state-refused:even {
+    -fx-background-color: #b5b1b1;
+    -fx-text-fill: white;
+}
+
+/****************************
+/*	LATE
+*****************************/
+
+.row-state-late {
+    -fx-background-color: #ff6666;
+}
+
+.row-state-late:even {
+    -fx-background-color: #ff6666;
+}
+
+
+/****************************
+/*	LATING
+*****************************/
+
+.row-state-lating {
+    -fx-background-color: #99ccff;
+}
+
+.row-state-lating:even {
+    -fx-background-color: #99ccff;
+}

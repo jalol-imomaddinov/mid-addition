@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="1000.0" styleClass="custom-pane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mid.ui.main.MainController">
+   <children>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="250.0" resizableOnDrag="true" resizeContent="true" styleClass="jfx-drawer" />
+      <AnchorPane>
+         <children>
+            <AnchorPane prefHeight="50.0" prefWidth="200.0" styleClass="toolbar" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <StackPane layoutX="942.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <JFXHamburger fx:id="hamburger" styleClass="jfx-hamburger-icon" />
+                     </children>
+                  </StackPane>
+                  <HBox alignment="CENTER_LEFT" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <FontAwesomeIconView glyphName="SEARCH" size="20" styleClass="alt-glyph-icon" />
+                        <JFXTextField prefHeight="25.0" prefWidth="250.0" style="-jfx-focus-color: derive(white, -20%); -jfx-unfocus-color: derive(white, -20%); -fx-text-fill: white;" styleClass="alt-text-field" />
+                     </children>
+                  </HBox>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <padding>
+                  <Insets left="15.0" right="15.0" />
+               </padding>
+            </AnchorPane>
+            <StackPane fx:id="content" prefHeight="625.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
